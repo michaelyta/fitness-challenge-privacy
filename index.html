@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Fitness Challenge</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d27;
+      --text: #e4e6ef;
+      --muted: #9395a5;
+      --accent: #4f8ef7;
+      --border: #2a2d3a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: var(--text);
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    th {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    td { color: var(--muted); }
+
+    .badge {
+      display: inline-block;
+      background: rgba(79, 142, 247, 0.15);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      .card { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Fitness Challenge · Last updated: March 5, 2026</p>
+
+    <p>
+      Fitness Challenge ("the App") is a mobile application that allows groups of
+      friends to compete in fitness challenges using health data from Apple HealthKit.
+      Your privacy is important to us. This policy explains what data we collect, how we
+      use it, and your rights.
+    </p>
+
+    <h2>1. Data We Collect</h2>
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Purpose</th>
+            <th>Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Display Name</td>
+            <td>Shown to group members on the leaderboard</td>
+            <td>Device &amp; Server</td>
+          </tr>
+          <tr>
+            <td>HealthKit Data <span class="badge">Read-only</span></td>
+            <td>Steps, distance, flights climbed, and active calories for challenge tracking</td>
+            <td>Server (aggregated daily values only)</td>
+          </tr>
+          <tr>
+            <td>Anonymous User ID</td>
+            <td>Identifies your device without requiring personal information</td>
+            <td>Device &amp; Server</td>
+          </tr>
+          <tr>
+            <td>Group Membership</td>
+            <td>Associates you with your challenge group</td>
+            <td>Server</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. What We Do NOT Collect</h2>
+    <ul>
+      <li>We do <strong>not</strong> collect your name, email address, phone number, or any personal contact information.</li>
+      <li>We do <strong>not</strong> collect your location data.</li>
+      <li>We do <strong>not</strong> use advertising trackers, analytics SDKs, or any third-party tracking tools.</li>
+      <li>We do <strong>not</strong> sell, rent, or share your data with third parties for marketing purposes.</li>
+      <li>We do <strong>not</strong> write to or modify your Apple Health data. The App has <strong>read-only</strong> access.</li>
+    </ul>
+
+    <h2>3. Apple HealthKit Data</h2>
+    <p>
+      The App requests read-only access to specific HealthKit data types relevant to
+      your active challenge (e.g., Step Count, Walking + Running Distance, Flights
+      Climbed, or Active Energy Burned). This data is:
+    </p>
+    <ul>
+      <li>Only accessed when you are participating in an active challenge.</li>
+      <li>Aggregated into daily totals before being sent to the server.</li>
+      <li>Used solely to display your progress on the group leaderboard.</li>
+      <li>Never used for advertising, marketing, or sold to third parties.</li>
+      <li>Never stored in iCloud or transferred to any platform other than our secure database for leaderboard purposes.</li>
+    </ul>
+    <p>
+      In compliance with Apple's guidelines, HealthKit data is <strong>not</strong> used
+      for any purpose other than providing the health and fitness functionality
+      described above.
+    </p>
+
+    <h2>4. Authentication</h2>
+    <p>
+      The App uses <strong>anonymous authentication</strong>. When you first open the
+      App, a random, anonymous user ID is created on your device. No email, password,
+      phone number, or social login is required. This ID is stored locally on your
+      device and used to associate your health data with your leaderboard position.
+    </p>
+
+    <h2>5. Data Storage &amp; Security</h2>
+    <p>
+      Server-side data is stored in a <strong>Supabase</strong>-hosted PostgreSQL
+      database with row-level security (RLS) policies to ensure users can only
+      access data associated with their groups. Communication between the App and
+      the server is encrypted via HTTPS/TLS.
+    </p>
+
+    <h2>6. Data Retention &amp; Deletion</h2>
+    <p>
+      Your data is retained only for as long as you are a member of a group. You can:
+    </p>
+    <ul>
+      <li><strong>Leave a group</strong> — your membership and associated health logs are removed.</li>
+      <li><strong>Delete a group</strong> (admin only) — all group data, challenges, and member records are permanently deleted.</li>
+    </ul>
+    <p>
+      If you wish to have all your data removed from our servers, you may leave all
+      groups or contact us at the email below.
+    </p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+      The App is not directed at children under the age of 13. We do not knowingly
+      collect data from children. If you believe a child has provided us with data,
+      please contact us and we will promptly delete it.
+    </p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be
+      reflected on this page with an updated "Last updated" date. Continued use of the
+      App after changes constitutes acceptance of the revised policy.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have questions or concerns about this Privacy Policy, please contact us at:
+    </p>
+    <p><a href="mailto:contact@fitnesschallenge.app">contact@fitnesschallenge.app</a></p>
+
+    <div class="footer">
+      &copy; 2026 Fitness Challenge. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
