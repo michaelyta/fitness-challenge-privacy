@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,11 @@
       --border: #2a2d3a;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -51,7 +56,8 @@
       color: var(--text);
     }
 
-    p, li {
+    p,
+    li {
       color: var(--muted);
       font-size: 0.95rem;
       margin-bottom: 0.75rem;
@@ -62,7 +68,9 @@
       margin-bottom: 1rem;
     }
 
-    li { margin-bottom: 0.4rem; }
+    li {
+      margin-bottom: 0.4rem;
+    }
 
     .card {
       background: var(--card);
@@ -78,7 +86,8 @@
       margin: 1rem 0;
     }
 
-    th, td {
+    th,
+    td {
       text-align: left;
       padding: 0.6rem 0.75rem;
       border-bottom: 1px solid var(--border);
@@ -90,7 +99,9 @@
       font-weight: 600;
     }
 
-    td { color: var(--muted); }
+    td {
+      color: var(--muted);
+    }
 
     .badge {
       display: inline-block;
@@ -111,19 +122,31 @@
       text-align: center;
     }
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
 
     @media (max-width: 600px) {
-      h1 { font-size: 1.5rem; }
-      .card { padding: 1rem; }
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Fitness Challenge · Last updated: March 5, 2026</p>
+    <p class="subtitle">Fitness Challenge &middot; Last updated: March 13, 2026</p>
 
     <p>
       Fitness Challenge ("the App") is a mobile application that allows groups of
@@ -145,8 +168,13 @@
         <tbody>
           <tr>
             <td>Display Name</td>
-            <td>Shown to group members on the leaderboard</td>
+            <td>Shown to group members on the leaderboard. You can customize this directly in the App.</td>
             <td>Device &amp; Server</td>
+          </tr>
+          <tr>
+            <td>Apple Sign-In Information</td>
+            <td>Name, Email, and Apple ID used for account creation, syncing, and recovery.</td>
+            <td>Server</td>
           </tr>
           <tr>
             <td>HealthKit Data <span class="badge">Read-only</span></td>
@@ -154,13 +182,8 @@
             <td>Server (aggregated daily values only)</td>
           </tr>
           <tr>
-            <td>Anonymous User ID</td>
-            <td>Identifies your device without requiring personal information</td>
-            <td>Device &amp; Server</td>
-          </tr>
-          <tr>
             <td>Group Membership</td>
-            <td>Associates you with your challenge group</td>
+            <td>Associates you with your challenge groups (up to 5)</td>
             <td>Server</td>
           </tr>
         </tbody>
@@ -169,11 +192,11 @@
 
     <h2>2. What We Do NOT Collect</h2>
     <ul>
-      <li>We do <strong>not</strong> collect your name, email address, phone number, or any personal contact information.</li>
-      <li>We do <strong>not</strong> collect your location data.</li>
+      <li>We do <strong>not</strong> collect your phone number, physical address, or location data.</li>
       <li>We do <strong>not</strong> use advertising trackers, analytics SDKs, or any third-party tracking tools.</li>
       <li>We do <strong>not</strong> sell, rent, or share your data with third parties for marketing purposes.</li>
-      <li>We do <strong>not</strong> write to or modify your Apple Health data. The App has <strong>read-only</strong> access.</li>
+      <li>We do <strong>not</strong> write to or modify your Apple Health data. The App has <strong>read-only</strong>
+        access.</li>
     </ul>
 
     <h2>3. Apple HealthKit Data</h2>
@@ -187,7 +210,8 @@
       <li>Aggregated into daily totals before being sent to the server.</li>
       <li>Used solely to display your progress on the group leaderboard.</li>
       <li>Never used for advertising, marketing, or sold to third parties.</li>
-      <li>Never stored in iCloud or transferred to any platform other than our secure database for leaderboard purposes.</li>
+      <li>Never stored in iCloud or transferred to any platform other than our secure database for leaderboard purposes.
+      </li>
     </ul>
     <p>
       In compliance with Apple's guidelines, HealthKit data is <strong>not</strong> used
@@ -197,10 +221,10 @@
 
     <h2>4. Authentication</h2>
     <p>
-      The App uses <strong>anonymous authentication</strong>. When you first open the
-      App, a random, anonymous user ID is created on your device. No email, password,
-      phone number, or social login is required. This ID is stored locally on your
-      device and used to associate your health data with your leaderboard position.
+      The App uses <strong>Sign in with Apple</strong> for authentication. This is required to access the App,
+      participate in any fitness challenges, create groups, or join groups. This securely connects your account,
+      allowing data recovery and syncing across devices using your Apple ID. Your authentication is securely managed by
+      Apple, and no passwords are ever created or stored by our servers.
     </p>
 
     <h2>5. Data Storage &amp; Security</h2>
@@ -217,11 +241,12 @@
     </p>
     <ul>
       <li><strong>Leave a group</strong> — your membership and associated health logs are removed.</li>
-      <li><strong>Delete a group</strong> (admin only) — all group data, challenges, and member records are permanently deleted.</li>
+      <li><strong>Delete a group</strong> (admin only) — all group data, challenges, and member records are permanently
+        deleted.</li>
     </ul>
     <p>
-      If you wish to have all your data removed from our servers, you may leave all
-      groups or contact us at the email below.
+      If you wish to have all your personal data (including your registered Apple account data) removed from our
+      servers, please contact us at the email below.
     </p>
 
     <h2>7. Children's Privacy</h2>
@@ -249,4 +274,5 @@
     </div>
   </div>
 </body>
+
 </html>
