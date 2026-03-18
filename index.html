@@ -40,6 +40,7 @@
       margin-bottom: 0.25rem;
       background: linear-gradient(135deg, var(--accent), #a78bfa);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
@@ -146,7 +147,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Fitness Challenge &middot; Last updated: March 13, 2026</p>
+    <p class="subtitle">Fitness Challenge &middot; Last updated: March 18, 2026</p>
 
     <p>
       Fitness Challenge ("the App") is a mobile application that allows groups of
@@ -186,6 +187,11 @@
             <td>Associates you with your challenge groups (up to 5)</td>
             <td>Server</td>
           </tr>
+          <tr>
+            <td>Device Token</td>
+            <td>Required to send push notifications for challenge updates and rank changes.</td>
+            <td>Server (Securely stored)</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -210,16 +216,30 @@
       <li>Aggregated into daily totals before being sent to the server.</li>
       <li>Used solely to display your progress on the group leaderboard.</li>
       <li>Never used for advertising, marketing, or sold to third parties.</li>
-      <li>Never stored in iCloud or transferred to any platform other than our secure database for leaderboard purposes.
-      </li>
+      <li>Never stored in iCloud or transferred to any platform other than our secure database for leaderboard purposes.</li>
+      <li>May be accessed in the background to keep your progress synchronized with the group leaderboard.</li>
     </ul>
+    <p>
+      Background synchronization is used to ensure that the leaderboard remains accurate for all participants. You can control this access through your device's system settings.
+    </p>
     <p>
       In compliance with Apple's guidelines, HealthKit data is <strong>not</strong> used
       for any purpose other than providing the health and fitness functionality
       described above.
     </p>
 
-    <h2>4. Authentication</h2>
+    <h2>4. Push Notifications</h2>
+    <p>
+      The App offers push notifications to keep you informed about challenge start/end times, rank changes on the
+      leaderboard, and other group updates. We collect a unique device token from your phone to deliver these messages.
+    </p>
+    <ul>
+      <li><strong>Opt-in:</strong> Notifications are only sent if you explicitly grant permission.</li>
+      <li><strong>Controls:</strong> You can choose from 'All', 'Limited', or 'Off' within the App's settings at any time.</li>
+      <li><strong>No Marketing:</strong> We never use push notifications for advertising or promotional purposes.</li>
+    </ul>
+
+<h2>5. Authentication</h2>
     <p>
       The App uses <strong>Sign in with Apple</strong> for authentication. This is required to access the App,
       participate in any fitness challenges, create groups, or join groups. This securely connects your account,
@@ -227,7 +247,7 @@
       Apple, and no passwords are ever created or stored by our servers.
     </p>
 
-    <h2>5. Data Storage &amp; Security</h2>
+    <h2>6. Data Storage &amp; Security</h2>
     <p>
       Server-side data is stored in a <strong>Supabase</strong>-hosted PostgreSQL
       database with row-level security (RLS) policies to ensure users can only
@@ -235,35 +255,31 @@
       the server is encrypted via HTTPS/TLS.
     </p>
 
-    <h2>6. Data Retention &amp; Deletion</h2>
+    <h2>7. Data Retention &amp; Deletion</h2>
     <p>
-      Your data is retained only for as long as you are a member of a group. You can:
+      Your data is retained only for as long as you are a member of a group. You can leave a group at any time, which
+      removes your membership and associated health logs. Admins can permanently delete a group, which removes all
+      associated data for all members.
     </p>
-    <ul>
-      <li><strong>Leave a group</strong> — your membership and associated health logs are removed.</li>
-      <li><strong>Delete a group</strong> (admin only) — all group data, challenges, and member records are permanently
-        deleted.</li>
-    </ul>
     <p>
-      If you wish to have all your personal data (including your registered Apple account data) removed from our
-      servers, please contact us at the email below.
+      You may also request complete account deletion via the support email below.
     </p>
 
-    <h2>7. Children's Privacy</h2>
+    <h2>8. Children's Privacy</h2>
     <p>
       The App is not directed at children under the age of 13. We do not knowingly
       collect data from children. If you believe a child has provided us with data,
       please contact us and we will promptly delete it.
     </p>
 
-    <h2>8. Changes to This Policy</h2>
+    <h2>9. Changes to This Policy</h2>
     <p>
       We may update this Privacy Policy from time to time. Any changes will be
       reflected on this page with an updated "Last updated" date. Continued use of the
       App after changes constitutes acceptance of the revised policy.
     </p>
 
-    <h2>9. Contact Us</h2>
+    <h2>10. Contact Us</h2>
     <p>
       If you have questions or concerns about this Privacy Policy, please contact us at:
     </p>
